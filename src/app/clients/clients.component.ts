@@ -11,13 +11,19 @@ export class ClientsComponent implements OnInit {
 
   clients = Clients;
 
-  client: Client = {
-    id: 1,
-    name: 'client a'
-  };
+  // client: Client = {
+  //   id: 1,
+  //   name: 'client a'
+  // };
+
+  selectedClient: Client;
+  onSelect(client: Client): void {
+    this.selectedClient = client;
+  }
 
   constructor() { }
 
   ngOnInit() {
   }
+
 }

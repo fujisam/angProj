@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from '../client';
+import { Clients } from '../clients.mock';
 
 @Component({
   selector: 'app-clients',
@@ -7,6 +8,8 @@ import { Client } from '../client';
   styleUrls: ['./clients.component.sass']
 })
 export class ClientsComponent implements OnInit {
+
+  clients = Clients;
 
   client: Client = {
     id: 1,
